@@ -1,22 +1,17 @@
-n = eval(input("> "))
-sum = 0
 
-#0 1 1 2 3 5 7
+n = eval(input("enter the value:"))
 
-for i in range(n):
-    if i == 0:
-        a = i
-        print(a,end=" ")
-    elif i == 1:
-        b = i
-        print(b,end=" ")
-    else:
-        sum = a + b
-        print(sum,end = " ")
+def fibonacci(n):
+    a = 0
+    b = 1
+    print(a,b,end=" ")
+
+    for i in range(2,n):
+        c = a + b
+        print(c,end= " " )
         a = b
-        b = sum
+        b = c
+        n = n + 1
 
-
-
-
+fibonacci(n)
 

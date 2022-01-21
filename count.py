@@ -1,17 +1,10 @@
-"""
+# WAP to find the number of occurances for the list word ['a', 'an', 'the'] in below paragraph
 
-10. Write a program to count the number of names beginning with vowels in a given tuple of names.
-    >>> ['Apple', 'Google', 'iGate', 'devU', '3M', 'Oracle']
-    3
-"""
+sentence = input("enter the sentence:")
+p = sentence.split()
 
-l = eval(input("? "))
+for i in ['a','an','the']:
+    print(i,p.count(i))
 
-vowels = "aeiou"
-count = 0
-for i in l:
-    if i[0].lower() in vowels:
-        count += 1
 
-print(count)
 
